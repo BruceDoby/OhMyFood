@@ -1,169 +1,307 @@
-:root {
-    --button-bg-color: #9356DC;
-    --button-second-color: #FF79DA;
-    --main-bg-color: #f3f3f3;
-    --new-bg-color: #99E2D0;
-    --new-txt-color: #008766;
-    --blue-color: #89C8FA;
-    --dark-blue-color: #003a68;
+$color_1: #101010;
+$color_2: #353535;
+$color_3: white;
+$color_4: #7e7e7e;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: 'Shrikhand', sans-serif;
+$background-color_1: #eaeaea;
+$background-color_3: #f6f6f6;
+$button-bg-color: #9356DC;
+$button-second-color: #FF79DA;
+$main-bg-color: #f3f3f3;
+$new-bg-color: #99E2D0;
+$new-txt-color: #008766;
+$blue-color: #89C8FA;
+$dark-blue-color: #003a68;
+
+/**************Global*****************/
+main {
+	background-color: $background-color_3;
 }
 
 body {
-    margin: 0px;
+	margin: 0px;
 }
-
-h1,
-h2,
-h3,
-p {
-    font-family: 'Roboto', sans-serif;
-}
-
 h1 {
-    font-weight: 700;
-    font-size: 24px;
-    margin-left: 20px;
+	font-family: $font-family_1;
+	font-weight: 700;
+	font-size: 24px;
+	margin-left: 20px;
 }
-
 h2 {
-    font-weight: 300;
-    font-size: 18px;
+	font-family: $font-family_1;
+	font-weight: 300;
+	font-size: 18px;
+}
+h3 {
+	font-family: $font-family_1;
+	text-decoration: none;
+}
+p {
+	font-family: $font-family_1;
 }
 
-/**************Header*****************/
+/************Header**************/
 
 header {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    /*padding-top: 15px;
-    padding-bottom: 10px;*/
-    height: 63px;
+	position: relative;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+	height: 63px;
+}
+.logo {
+	font-family: $font-family_2;
+	text-align: center;
+	color: $color_1;
+	font-size: 30px;
+	margin: 0px;
+	padding-top: 15px;
 }
 
-.logo {
-    font-family: 'Shrikhand', sans-serif;
-    text-align: center;
-    color: #101010;
-    font-size: 30px;
-    margin: 0px;
-    padding-top: 15px;
-}
+/*********Localisation***********/
 
 .fa-location-dot {
-    color: #353535;
-    padding-top: 15px;
+	color: $color_2;
+	padding-top: 15px;
 }
-
 .location {
-    background-color: #eaeaea;
-    display: flex;
-    justify-content: center;
-    gap: 17px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+	position: static;
+	background-color: $background-color_1;
+	display: flex;
+	justify-content: center;
+	gap: 17px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.location__txt {
+	display: flex;
+	color: $color_2;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
 }
 
-.location-txt {
-    display: flex;
-    color: #353535;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-}
+/***********Réservation Bouton**************/
 
 .section1 {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    background-color: var(--main-bg-color);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+	position: sticky;
+	h1 {
+		margin: 30px 50px 0px 50px;
+	}
+	h2 {
+		margin-bottom: 30px;
+	}
 }
-
-.section1 h1 {
-    margin: 30px 50px 0px 50px;
-    /*margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 0px;
-    margin-top: 30px;*/
-}
-
-.section1 h2 {
-    margin-bottom: 30px;
-}
-
 .bouton {
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(to top, #9356DC, #FF79DA);
-    height: 50px;
-    width: 218px;
-    font-size: 16px;
-    color: white;
-    font-weight: 500;
-    margin-bottom: 60px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	border: none;
+	border-radius: 25px;
+	background: linear-gradient(to top, #9356DC, #FF79DA);
+	height: 50px;
+	width: 218px;
+	font-size: 16px;
+	color: $color_3;
+	font-weight: 500;
+	margin-bottom: 60px;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	&:hover {
+		filter: brightness(1.1);
+		box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4);
+	}
 }
 
-.bouton:hover {
-    filter: brightness(1.1);
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4);
-}
+/***************Fonctionnement*****************/
 
 .fonctionnement {
-    margin-top: 50px;
+	padding-top: 40px;
+	padding-bottom: 70px;
+	background-color: $color_3;
 }
-
 .articles {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	p {
+		position: relative;
+		bottom: 25px;
+		padding-left: 80px;
+		margin-top: 7px;
+	}
+	.fa-solid {
+		color: $color_4;
+		position: relative;
+		left: 30px;
+		top: 0px;
+		font-size: 20px;
+	}
 }
-
 .article-card {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #f6f6f6;
-    width: 322.49px;
-    height: 72.38px;
-    border-radius: 20px;
-    font-weight: 500;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: $background-color_3;
+	width: 322.49px;
+	height: 72.38px;
+	border-radius: 20px;
+	font-weight: 500;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+	&:hover {
+		i {
+			color: $button-bg-color;
+		}
+	}
 }
-
-.articles p {
-    position: relative;
-    bottom: 25px;
-    padding-left: 80px;
-    margin-top: 7px;
-}
-
-.articles .fa-solid {
-    color: #7e7e7e;
-    position: relative;
-    left: 30px;
-    top: 0px;
-    font-size: 20px;
-}
-
-.article-card:hover i {
-    color: var(--button-bg-color);
-}
-
 .circle {
-    position: relative;
-    top: 25px;
-    right: 10px;
-    border: 1px solid #9356DC;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: var(--button-bg-color);
+	position: relative;
+	top: 25px;
+	right: 10px;
+	border: 1px solid #9356DC;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: $button-bg-color;
+	p {
+		position: relative;
+		bottom: 3px;
+		right: 73px;
+	}
 }
 
-.circle p {
-    position: relative;
-    bottom: 3px;
-    right: 73px;
-}
+/*********Restaurants**********/
 
 .restaurants {
-    background-color: #f6f6f6;
+	background-color: $background-color_3;
+
+	h1 {
+		padding-top: 40px;
+	}
+}
+
+.restaurant-cards {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-bottom: 40px;
+
+	img {
+	width: 340px;
+	height: 181px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	object-fit: cover;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h3 {
+		color: $color_1;
+	}
+
+	p {
+		color: $color_1;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	background-color: $color_3;
+	height: 86px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+	h3 {
+		padding-left: 15px;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	p {
+		padding-left: 15px;
+		margin-top: -10px;
+		font-size: 17px;
+		font-weight: 300;
+	}
+}
+
+.fa-heart {
+	color: $color_1;
+	position: relative;
+	left: 280px;
+	bottom: 60px;
+	font-size: 32px;
+	font-weight: 100;
+}
+
+.news {
+	background-color: $new-bg-color;
+	width: 80px;
+	height: 29px;
+	position: relative;
+	left: 240px;
+	top: 45px;
+	margin-top: -30px;
+
+	p {
+		font-size: 14px;
+		color: $new-txt-color;
+		text-align: center;
+		margin-top: 6px;
+	}
+}
+
+/***********Footer*************/
+
+footer {
+	background-color: $color_2;
+
+	p {
+		color: $color_3;
+		font-weight: 400;
+	}
+}
+
+.footer__divers {
+	margin: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 25px;
+
+	a {
+		text-decoration: none;
+		color: $color_3;
+		font-family: $font-family_1;
+		font-weight: 400;
+	}
+
+	.fa-solid {
+		color: $color_3;
+		position: relative;
+		top: 18px;
+		font-size: 12px;
+	}
+}
+
+.footer__logo {
+	color: $color_3;
+	font-family: $font-family_2;
+	font-size: 18px;
+	font-weight: 400;
+	padding-top: 25px;
+	margin: 20px;
+	margin-top: 0px;
+	margin-bottom: -20px;
+}
+
+.gras {
+	font-weight: 500;
+	padding-left: 22px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
