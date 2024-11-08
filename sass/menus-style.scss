@@ -1,0 +1,220 @@
+$color_1: #101010;
+$color_2: #353535;
+$color_3: white;
+$color_4: #7e7e7e;
+$color_5: #353535;
+$font-family_1: 'Roboto', sans-serif;
+$font-family_2: 'Shrikhand', sans-serif;
+$background-color_1: #eaeaea;
+$background-color_3: #f6f6f6;
+$button-bg-color: #9356DC;
+$button-second-color: #FF79DA;
+$main-bg-color: #f3f3f3;
+$new-bg-color: #99E2D0;
+$new-txt-color: #008766;
+$blue-color: #89C8FA;
+$dark-blue-color: #003a68;
+
+/**************Global*****************/
+
+body {
+	margin: 0px;
+}
+h1 {
+	font-family: $font-family_1;
+	font-weight: 700;
+	font-size: 24px;
+	margin-left: 20px;
+}
+h2 {
+	font-family: $font-family_1;
+	font-weight: 300;
+	font-size: 18px;
+}
+h3 {
+	font-family: $font-family_1;
+	text-decoration: none;
+}
+p {
+	font-family: $font-family_1;
+}
+
+/************Header**************/
+
+header {
+	position: relative;
+	height: 63px;
+}
+
+.logo {
+	font-family: $font-family_2;
+	text-align: center;
+	color: $color_1;
+	font-size: 30px;
+	margin: 0px;
+	padding-top: 15px;
+}
+
+.fa-arrow-left {
+    color: $color_5;
+    position: relative;
+    bottom: 35px;
+    left: 20px;
+    font-size: 20px;
+}
+
+/*************Background**************/
+
+.bgimg {
+    width: 100%;
+}
+
+/*************Menu******************/
+
+.menu {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: $background-color_3;
+    position: relative;
+    bottom: 55px;
+    margin-bottom: -54px;
+
+    h1 {
+        font-size: 28px;
+        font-weight: 400;
+        font-family: $font-family_2;
+        margin-top: 0px;
+        padding-top: 30px;
+        margin-bottom: -10px;
+    }
+
+    h2 {
+        padding: 15px 0px 7px 0px;
+        /*margin: 0px 315px 0px 15px;*/
+        margin-top: 0px;
+        margin-left: 15px;
+        margin-right: 315px;
+        margin-bottom: 0px;
+        border-bottom: 3px solid $new-bg-color;
+    }
+
+    .fa-heart {
+        font-size: 28px;
+        position: relative;
+        bottom: 25px;
+        left: 314px;
+    }
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.card {
+    margin-top: 20px;
+    background-color: $color_3;
+    border-radius: 15px;
+    width: 349px;
+    height: 69px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        margin: 0px;
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 12px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+    }
+
+    p {
+        margin: 0px;
+        font-size: 15px;
+        font-weight: 300;
+        padding-left: 15px;
+    }
+
+    .price {
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        bottom: 17.5px;
+        left: 295px;
+    }
+}
+
+.bouton__centre {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.bouton {
+	border: none;
+	border-radius: 25px;
+	background: linear-gradient(to top, #9356DC, #FF79DA);
+	height: 50px;
+	width: 186px;
+	font-size: 16px;
+	color: $color_3;
+	font-weight: 500;
+	margin-bottom: 40px;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	&:hover {
+		filter: brightness(1.1);
+		box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4);
+		cursor: pointer;
+	}
+}
+
+/***********Footer*************/
+
+footer {
+	background-color: $color_2;
+
+	p {
+		color: $color_3;
+		font-weight: 400;
+	}
+}
+
+.footer__divers {
+	margin: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 25px;
+
+	a {
+		text-decoration: none;
+		color: $color_3;
+		font-family: $font-family_1;
+		font-weight: 400;
+	}
+
+	.fa-solid {
+		color: $color_3;
+		position: relative;
+		top: 18px;
+		font-size: 12px;
+	}
+}
+
+.footer__logo {
+	color: $color_3;
+	font-family: $font-family_2;
+	font-size: 18px;
+	font-weight: 400;
+	padding-top: 25px;
+	margin: 20px;
+	margin-top: 0px;
+	margin-bottom: -20px;
+}
+
+.gras {
+	font-weight: 500;
+	padding-left: 22px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
