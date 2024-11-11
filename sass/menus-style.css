@@ -61,6 +61,12 @@ header {
   position: relative;
   bottom: 55px;
   margin-bottom: -54px;
+  /*.empty-heart {
+      font-size: 28px;
+      position: relative;
+      bottom: 25px;
+      left: 314px;
+  }*/
 }
 .menu h1 {
   font-size: 28px;
@@ -78,12 +84,6 @@ header {
   margin-right: 315px;
   margin-bottom: 0px;
   border-bottom: 3px solid #99E2D0;
-}
-.menu .fa-heart {
-  font-size: 28px;
-  position: relative;
-  bottom: 25px;
-  left: 314px;
 }
 
 .contenu {
@@ -121,6 +121,10 @@ header {
   position: relative;
   bottom: 17.5px;
   left: 295px;
+  width: 10px;
+}
+.card:hover {
+  cursor: pointer;
 }
 
 .bouton__centre {
@@ -190,4 +194,52 @@ footer p {
   padding-left: 22px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+/***********Animations************/
+/*.full-heart {
+    opacity: 0;
+    font-size: 28px;
+    position: relative;
+    bottom: 25px;
+    left: 282.05px;
+    transition-property: all;
+    transition-duration: 200ms;
+
+    &:hover {
+        opacity: 1;
+        color: transparent;
+        background-image: $gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}*/
+.empty-heart {
+  cursor: pointer;
+  font-size: 28px;
+  position: relative;
+  bottom: 25px;
+  left: 307px;
+}
+
+.full-heart {
+  opacity: 0;
+  font-size: 28px;
+  position: relative;
+  bottom: 25px;
+  left: 275.15px;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.toHide {
+  display: none;
+}
+
+.toHide:checked + .full-heart {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }/*# sourceMappingURL=menus-style.css.map */

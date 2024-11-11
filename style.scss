@@ -13,6 +13,7 @@ $new-bg-color: #99E2D0;
 $new-txt-color: #008766;
 $blue-color: #89C8FA;
 $dark-blue-color: #003a68;
+$gradient: linear-gradient(to bottom, #9356DC, #FF79DA);
 
 /**************Global*****************/
 main {
@@ -234,7 +235,7 @@ header {
 	}
 }
 
-.fa-heart {
+.empty-heart {
 	color: $color_1;
 	position: relative;
 	left: 280px;
@@ -307,4 +308,54 @@ footer {
 	padding-left: 22px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+}
+
+/***********Animations************/
+
+/*.full-heart {
+    opacity: 0;
+    font-size: 32px;
+    position: relative;
+    bottom: 60px;
+    left: 244.1px;
+    transition-property: all;
+    transition-duration: 200ms;
+
+    &:hover {
+        opacity: 1;
+        color: transparent;
+        background-image: $gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}*/
+
+.empty-heart {
+    cursor: pointer;
+    font-size: 28px;
+    position: relative;
+    bottom: 60px;
+    left: 147px;
+}
+
+.full-heart {
+    opacity: 0;
+    font-size: 28px;
+    position: relative;
+    bottom: 59.61px;
+    left: 114.9px;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.toHide {
+    display: none;
+}
+
+.toHide:checked + .full-heart {
+    opacity: 1;
+    color: transparent;
+    background-image: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
