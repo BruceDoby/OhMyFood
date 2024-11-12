@@ -100,6 +100,8 @@ header {
   width: 349px;
   height: 69px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card h3 {
   margin: 0px;
@@ -242,4 +244,46 @@ footer p {
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
+  transform: scale(1.1);
+}
+
+.card:active + .select-btn {
+  opacity: 1;
+  margin-left: -10px;
+}
+
+.price2 {
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  right: 75px;
+  top: 15px;
+  width: 10px;
+}
+
+.select-btn {
+  cursor: pointer;
+  opacity: 0;
+  margin-left: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 69px;
+  left: 150px;
+  width: 59px;
+  height: 69px;
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: -69px;
+  transition-property: all;
+  transition-duration: 200ms;
+}
+
+.fa-circle-check {
+  position: relative;
+  left: 5px;
+  color: white;
+  font-size: 25px;
 }/*# sourceMappingURL=menus-style.css.map */
