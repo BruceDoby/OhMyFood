@@ -342,7 +342,7 @@ footer {
     opacity: 0;
     font-size: 28px;
     position: relative;
-    bottom: 59.61px;
+    bottom: 59.8px;
     left: 114.9px;
     transition-property: all;
     transition-duration: 200ms;
@@ -358,4 +358,5 @@ footer {
     background-image: $gradient;
     background-clip: text;
     -webkit-background-clip: text;
+	transform: scale(1.1);
 }
