@@ -358,4 +358,198 @@ footer p {
     margin-right: 0%;
     opacity: 1;
   }
+}
+
+/**********Media Queries***********/
+@media (min-width: 1440px) {
+  header {
+    box-shadow: none;
+    height: 96px;
+  }
+  header .logo {
+    position: relative;
+    top: 7px;
+    font-size: 36px;
+  }
+  .location {
+    box-shadow: none;
+  }
+  .fa-arrow-left {
+    position: relative;
+    bottom: 27px;
+  }
+  .bgimg {
+    height: 383px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .full-heart {
+    position: relative;
+    left: 650px;
+  }
+  .empty-heart {
+    position: relative;
+    left: 682px;
+  }
+  .menu {
+    width: 1055px;
+    position: relative;
+    bottom: 45px;
+    margin: auto;
+  }
+  .menu h1 {
+    position: relative;
+    left: 365px;
+    width: 300px;
+  }
+  .menu h2 {
+    margin-left: 210px;
+    margin-right: 800px;
+  }
+  .card {
+    width: 634px;
+  }
+  .card .price {
+    margin-right: 20px;
+  }
+  .select-btn {
+    position: relative;
+    left: 635px;
+  }
+  footer {
+    margin-top: -45px;
+  }
+  .footer__divers {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 30px;
+    padding-bottom: 35px;
+  }
+  .footer__divers a {
+    position: relative;
+    right: 230px;
+  }
+  .footer__divers p {
+    position: relative;
+    right: 250px;
+  }
+  .footer__divers .fa-solid {
+    position: relative;
+    right: 270px;
+    top: 4px;
+  }
+  .footer__divers .gras {
+    position: relative;
+    right: 280px;
+    margin-right: 5px;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 30px;
+    right: 50px;
+  }
+  .mentions {
+    padding-left: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  header {
+    box-shadow: none;
+    height: 96px;
+  }
+  header .logo {
+    position: relative;
+    top: 7px;
+    font-size: 36px;
+  }
+  .location {
+    box-shadow: none;
+  }
+  .fa-arrow-left {
+    position: relative;
+    bottom: 27px;
+  }
+  .bgimg {
+    height: 383px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .full-heart {
+    position: relative;
+    left: 490px;
+  }
+  .empty-heart {
+    position: relative;
+    left: 522px;
+  }
+  .menu {
+    width: 755px;
+    position: relative;
+    bottom: 45px;
+    margin: auto;
+  }
+  .menu h1 {
+    position: relative;
+    left: 210px;
+    width: 300px;
+  }
+  .menu h2 {
+    margin-left: 60px;
+    margin-right: 650px;
+  }
+  .card {
+    width: 634px;
+  }
+  .card .price {
+    margin-right: 20px;
+  }
+  .select-btn {
+    position: relative;
+    left: 635px;
+  }
+  footer {
+    margin-top: -45px;
+  }
+  .footer__divers {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 30px;
+    padding-bottom: 35px;
+  }
+  .footer__divers a {
+    position: relative;
+    right: 230px;
+  }
+  .footer__divers p {
+    position: relative;
+    right: 250px;
+  }
+  .footer__divers .fa-solid {
+    position: relative;
+    right: 270px;
+    top: 4px;
+  }
+  .footer__divers .gras {
+    position: relative;
+    right: 280px;
+    margin-right: 5px;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 30px;
+    right: 50px;
+  }
+  .mentions {
+    padding-left: 22px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }/*# sourceMappingURL=menus-style.css.map */
