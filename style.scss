@@ -328,24 +328,6 @@ footer {
 
 /***********Animations************/
 
-/*.full-heart {
-    opacity: 0;
-    font-size: 32px;
-    position: relative;
-    bottom: 60px;
-    left: 244.1px;
-    transition-property: all;
-    transition-duration: 200ms;
-
-    &:hover {
-        opacity: 1;
-        color: transparent;
-        background-image: $gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-}*/
-
 .empty-heart {
     cursor: pointer;
     font-size: 28px;
