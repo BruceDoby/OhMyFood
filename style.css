@@ -6,8 +6,16 @@ main {
 
 body {
   margin: 0px;
+  overflow: hidden;
+  animation: enableScroll 2s forwards;
+  animation-delay: 2s;
 }
 
+@keyframes enableScroll {
+  to {
+    overflow: visible;
+  }
+}
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -45,6 +53,7 @@ header {
   font-size: 30px;
   margin: 0px;
   padding-top: 15px;
+  cursor: default;
 }
 
 /*********Localisation***********/
@@ -342,32 +351,33 @@ footer p {
 }
 
 .turn {
-  position: sticky;
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   background-color: white;
-  /*z-index: 10;*/
+  z-index: -10;
+  width: 100%;
   height: 100vh;
   display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disapear 3s linear;
+  animation: disapear 2s linear;
   animation-fill-mode: forwards;
 }
 
 @keyframes disapear {
   0% {
+    opacity: 1;
     z-index: 10;
   }
-  99% {
-    height: 100vh;
+  90% {
+    opacity: 1;
+    z-index: 10;
   }
   100% {
-    z-index: -10;
-    height: 0px;
+    opacity: 0;
+    display: none;
   }
 }
 .fa-bowl-food {

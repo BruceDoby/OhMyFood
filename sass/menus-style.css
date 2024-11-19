@@ -38,6 +38,7 @@ header {
   font-size: 30px;
   margin: 0px;
   padding-top: 15px;
+  cursor: default;
 }
 
 .fa-arrow-left {
@@ -51,6 +52,9 @@ header {
 /*************Background**************/
 .bgimg {
   width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*************Menu******************/
@@ -137,6 +141,10 @@ header {
   right: 74px;
   top: 14px;
   width: 10px;
+}
+
+label:hover {
+  cursor: pointer;
 }
 
 .bouton__centre {
@@ -279,10 +287,17 @@ footer p {
   transition-duration: 200ms;
 }
 
-.card:checked .p-dots {
+.toHide2:checked ~ label .p-dots {
   animation: reduction 350ms forwards;
 }
 
+/*.toHide2 {
+    &:checked {
+        .p-dots {
+        animation: reduction 350ms forwards;
+        }
+    }
+}*/
 @keyframes reduction {
   0% {
     padding-right: 0px;
@@ -291,18 +306,47 @@ footer p {
     padding-right: 100px;
   }
 }
-.card:checked > .select-btn {
-  animation: slide-left 350ms forwards;
-  /*opacity: 1;
-  margin-left: -10px;*/
+.toHide2:not(:checked) ~ label .p-dots {
+  animation: addition 350ms forwards;
 }
 
+@keyframes addition {
+  0% {
+    padding-right: 100px;
+  }
+  100% {
+    padding-right: 0px;
+  }
+}
+.toHide2:checked ~ label .select-btn {
+  animation: slide-left 350ms forwards;
+}
+
+/*.toHide2 {
+    &:checked > .select-btn {
+        animation: slide-left 350ms forwards;
+        /*opacity: 1;
+        margin-left: -10px;
+    }
+}*/
 @keyframes slide-left {
   0% {
     transform: translateX(0px);
   }
   100% {
     transform: translateX(-60px);
+  }
+}
+.toHide2:not(:checked) ~ label .select-btn {
+  animation: slide-right 350ms forwards;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-60px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
 .fa-circle-check {
@@ -456,6 +500,12 @@ footer p {
     margin-top: 0px;
     margin-bottom: 0px;
   }
+  .fa-circle-check {
+    position: relative;
+    left: 22px;
+    color: white;
+    font-size: 25px;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   header {
@@ -551,5 +601,11 @@ footer p {
     padding-left: 22px;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  .fa-circle-check {
+    position: relative;
+    left: 22px;
+    color: white;
+    font-size: 25px;
   }
 }/*# sourceMappingURL=menus-style.css.map */

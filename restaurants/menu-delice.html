@@ -3,15 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../assets/css/menu-delice.css">
+    <link rel="stylesheet" type="text/css" href="../sass/menus-style.css">
     <title>OhMyFood</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/logo/ohmyfood.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c8a26c88f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header></header>
+    <header>
+        <section>
+            <h1 class="logo">ohmyfood</h1>
+        </section>
+        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+    </header>
     <main>
-        <h1>Titre jsp ?</h1>
-        <h2>Test 2</h2>
+        <section>
+            <img class="bgimg" src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat du menu La Palette du goût">
+        </section>
+        <div class="menu">
+            <h1>Le délice des sens</h1>
+            <label for="coeur">
+                <i class="fa-regular fa-heart empty-heart"></i>
+                <input class="toHide" type="checkbox" id="coeur">
+                <i class="fa-solid fa-heart full-heart"></i>
+            </label>
+            <h2>ENTRÉES</h2>
+            <section class="contenu boxes1">
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche1">
+                    <label for="coche1">
+                        <div>
+                            <h3>Tartare de thon</h3>
+                            <p class="p-dots">Assaisonné au yuzu</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">25€</p>
+                        </div>
+                    </label>
+                </article>
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche2">
+                    <label for="coche2">
+                        <div>
+                            <h3>Bouchée de homard croustillant </h3>
+                            <p class="p-dots">Et sa farandole de petits légumes</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">35€</p>
+                        </div>
+                    </label>
+                </article>
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche3">
+                    <label for="coche3">
+                        <div>
+                            <h3>Velouté de cèpes </h3>
+                            <p class="p-dots">Aux truffes</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">20€</p>
+                        </div>
+                    </label>
+                </article>
+            </section>
+            <h2>PLATS</h2>
+            <section class="contenu boxes2">
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche4">
+                    <label for="coche4">
+                        <div>
+                            <h3 class="p-dots">Poulet rôti aux herbes de Provence</h3>
+                            <p class="p-dots">Et sa crème de truffe</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">40€</p>
+                        </div>
+                    </label>
+                </article>
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche5">
+                    <label for="coche5">
+                        <div>
+                            <h3>Langouste rôtie </h3>
+                            <p class="p-dots">Et ses légumes de saison</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">35€</p>
+                        </div>
+                </article>
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche6">
+                    <label for="coche6">
+                        <div>
+                            <h3>Côte de bœuf Angus </h3>
+                            <p class="p-dots">Et sa purée de panais</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">44€</p>
+                        </div>
+                    </label>
+                </article>
+            </section>
+            <h2>DESSERTS</h2>
+            <section class="contenu boxes3">
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche7">
+                    <label for="coche7">
+                        <div>
+                            <h3>Farandole de desserts</h3>
+                            <p class="p-dots">Du chef</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">18€</p>
+                        </div>
+                    </label>
+                </article>
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche8">
+                    <label for="coche8">
+                        <div>
+                            <h3>Crème brulée</h3>
+                            <p class="p-dots">Revisitée</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">22€</p>
+                        </div>
+                    </label>
+                </article>
+                <article class="card">
+                    <input class="toHide2" type="checkbox" id="coche9">
+                    <label for="coche9">
+                        <div>
+                            <h3>Tiramisu</h3>
+                            <p class="p-dots">À la noisette</p>
+                        </div>
+                        <div class="select-btn">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p class="price">23€</p>
+                        </div>
+                    </label>
+                </article>
+            </section>
+            <section class="bouton__centre">
+                <input type="button" value="Commander" class="bouton">
+            </section>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <h1 class="footer__logo">ohmyfood</h1>
+        <div class="footer__divers">
+            <i class="fa-solid fa-utensils"></i>
+            <p class="gras">Proposer un restaurant</p>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p class="gras">Devenir partenaire</p>
+            <p class="mentions">Mentions légales</p>
+            <a href="mailto:adressemail@gmail.com">Contact</a>
+        </div>
+    </footer>   
 </body>
 </html>
