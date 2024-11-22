@@ -111,19 +111,27 @@ header {
 .card:hover {
   cursor: pointer;
 }
-.card h3 {
+.card .span__h3 {
+  display: block;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   font-size: 18px;
   font-weight: 500;
   padding-top: 12px;
   padding-bottom: 5px;
   padding-left: 15px;
+  position: relative;
+  /*top: 10px;*/
 }
-.card p {
+.card .span__p {
+  display: block;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   font-size: 15px;
   font-weight: 300;
   padding-left: 15px;
+  position: relative;
+  /*top: 17.5px;*/
   /*text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;*/
