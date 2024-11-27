@@ -1,4 +1,3 @@
-/**************Global*****************/
 body {
   margin: 0px;
 }
@@ -25,7 +24,6 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-/************Header**************/
 header {
   position: relative;
   height: 63px;
@@ -49,7 +47,6 @@ header {
   font-size: 20px;
 }
 
-/*************Background**************/
 .bgimg {
   width: 100%;
   height: 250px;
@@ -57,7 +54,6 @@ header {
      object-fit: cover;
 }
 
-/*************Menu******************/
 .menu {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
@@ -65,12 +61,6 @@ header {
   position: relative;
   bottom: 55px;
   margin-bottom: -54px;
-  /*.empty-heart {
-      font-size: 28px;
-      position: relative;
-      bottom: 25px;
-      left: 314px;
-  }*/
 }
 .menu h1 {
   font-size: 28px;
@@ -82,7 +72,6 @@ header {
 }
 .menu h2 {
   padding: 15px 0px 7px 0px;
-  /*margin: 0px 315px 0px 15px;*/
   margin-top: 0px;
   margin-left: 15px;
   margin-right: 315px;
@@ -122,7 +111,6 @@ header {
   padding-bottom: 5px;
   padding-left: 15px;
   position: relative;
-  /*top: 10px;*/
 }
 .card .span__p {
   display: block;
@@ -132,10 +120,6 @@ header {
   font-weight: 300;
   padding-left: 15px;
   position: relative;
-  /*top: 17.5px;*/
-  /*text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;*/
 }
 .card .p-dots {
   text-overflow: ellipsis;
@@ -182,7 +166,6 @@ label:hover {
   cursor: pointer;
 }
 
-/***********Footer*************/
 footer {
   background-color: #353535;
 }
@@ -227,24 +210,6 @@ footer p {
   margin-bottom: 0px;
 }
 
-/***********Animations************/
-/*.full-heart {
-    opacity: 0;
-    font-size: 28px;
-    position: relative;
-    bottom: 25px;
-    left: 282.05px;
-    transition-property: all;
-    transition-duration: 200ms;
-
-    &:hover {
-        opacity: 1;
-        color: transparent;
-        background-image: $gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-}*/
 .empty-heart {
   cursor: pointer;
   font-size: 28px;
@@ -278,8 +243,6 @@ footer p {
 
 .select-btn {
   cursor: pointer;
-  /*opacity: 0;*/
-  /*margin-left: 250px;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,13 +263,6 @@ footer p {
   animation: reduction 350ms forwards;
 }
 
-/*.toHide2 {
-    &:checked {
-        .p-dots {
-        animation: reduction 350ms forwards;
-        }
-    }
-}*/
 @keyframes reduction {
   0% {
     padding-right: 0px;
@@ -331,13 +287,6 @@ footer p {
   animation: slide-left 350ms forwards;
 }
 
-/*.toHide2 {
-    &:checked > .select-btn {
-        animation: slide-left 350ms forwards;
-        /*opacity: 1;
-        margin-left: -10px;
-    }
-}*/
 @keyframes slide-left {
   0% {
     transform: translateX(0px);
@@ -413,7 +362,6 @@ footer p {
   }
 }
 
-/**********Media Queries***********/
 @media (min-width: 1440px) {
   header {
     box-shadow: none;

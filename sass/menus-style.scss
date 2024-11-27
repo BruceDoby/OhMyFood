@@ -16,8 +16,6 @@ $blue-color: #89C8FA;
 $dark-blue-color: #003a68;
 $gradient: linear-gradient(to bottom, #9356DC, #FF79DA);
 
-/**************Global*****************/
-
 body {
 	margin: 0px;
 }
@@ -39,8 +37,6 @@ h3 {
 p {
 	font-family: $font-family_1;
 }
-
-/************Header**************/
 
 header {
 	position: relative;
@@ -65,15 +61,11 @@ header {
     font-size: 20px;
 }
 
-/*************Background**************/
-
 .bgimg {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
-
-/*************Menu******************/
 
 .menu {
     border-top-left-radius: 30px;
@@ -94,7 +86,6 @@ header {
 
     h2 {
         padding: 15px 0px 7px 0px;
-        /*margin: 0px 315px 0px 15px;*/
         margin-top: 0px;
         margin-left: 15px;
         margin-right: 315px;
@@ -102,13 +93,6 @@ header {
         border-bottom: 3px solid $new-bg-color;
         width: 46px;
     }
-
-    /*.empty-heart {
-        font-size: 28px;
-        position: relative;
-        bottom: 25px;
-        left: 314px;
-    }*/
 }
 
 .contenu {
@@ -143,7 +127,6 @@ header {
         padding-bottom: 5px;
         padding-left: 15px;
         position: relative;
-        /*top: 10px;*/
     }
 
     .span__p {
@@ -154,10 +137,6 @@ header {
         font-weight: 300;
         padding-left: 15px;
         position: relative;
-        /*top: 17.5px;*/
-        /*text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;*/
     }
 
     .p-dots {
@@ -209,8 +188,6 @@ label {
 	}
 }
 
-/***********Footer*************/
-
 footer {
 	background-color: $color_2;
 
@@ -258,26 +235,6 @@ footer {
 	margin-bottom: 0px;
 }
 
-/***********Animations************/
-
-/*.full-heart {
-    opacity: 0;
-    font-size: 28px;
-    position: relative;
-    bottom: 25px;
-    left: 282.05px;
-    transition-property: all;
-    transition-duration: 200ms;
-
-    &:hover {
-        opacity: 1;
-        color: transparent;
-        background-image: $gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
-}*/
-
 .empty-heart {
     cursor: pointer;
     font-size: 28px;
@@ -311,8 +268,6 @@ footer {
 
 .select-btn {
     cursor: pointer;
-    /*opacity: 0;*/
-    /*margin-left: 250px;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,14 +291,6 @@ footer {
         }
     }
 }
-
-/*.toHide2 {
-    &:checked {
-        .p-dots {
-        animation: reduction 350ms forwards;
-        }
-    }
-}*/
 
 @keyframes reduction {
     0% {
@@ -380,14 +327,6 @@ footer {
         }
     }
 }
-
-/*.toHide2 {
-    &:checked > .select-btn {
-        animation: slide-left 350ms forwards;
-        /*opacity: 1;
-        margin-left: -10px;
-    }
-}*/
 
 @keyframes slide-left {
     0% {
@@ -430,7 +369,7 @@ footer {
 }
 
 .boxes1 {
-    animation: slide-in 1s forwards /*100ms*/;
+    animation: slide-in 1s forwards;
 
     @keyframes slide-in {
         0% {
@@ -478,8 +417,6 @@ footer {
         }
     }
 }
-
-/**********Media Queries***********/
 
 @media (min-width: 1440px) {
     header {
